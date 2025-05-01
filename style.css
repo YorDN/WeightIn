@@ -34,7 +34,7 @@ body, html {
   }
   
   .big-number {
-    font-size: 60px;
+    font-size: 70px;
     font-weight: bolder;
     display: block;
   }
@@ -111,6 +111,8 @@ body, html {
     font-size: 20px;
     font-weight: bold;
     opacity: 0.8;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
   
   .history {
