@@ -1,0 +1,145 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #796FFF, #FF6C6C);
+    color: white;
+    height: 100vh;
+  }
+  
+  .app {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 40px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: stretch;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    height: 100%;
+  }
+  
+  .big-number {
+    font-size: 60px;
+    font-weight: bolder;
+    display: block;
+  }
+  .dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+  }
+  .dot-container{
+    display: flex;
+  }
+  #red-dot{
+    background-color: #ff605c;
+  }
+  #yellow-dot{
+    background-color: #ffbd44;
+  }
+  #green-dot{
+    background-color: #00ca4e;
+  }
+
+  .input-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 15px 0;
+  }
+  .sect-2-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #checkin{
+    margin-bottom: 20px;
+  }
+  input[type="number"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 150px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+  }
+  ::placeholder {
+    color: white;
+    opacity: 0.8; 
+  }
+  button {
+    background-color: white;
+    color: #FF6C6C;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #ffe5e5;
+  }
+  
+  small {
+    display: block;
+    margin-top: 10px;
+    opacity: 0.7;
+  }
+  #lastDate{
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.8;
+  }
+  
+  .history {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    opacity: 0.9;
+  }
+  
+  .history-entry {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding: 15px;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  .goal-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    font-size: 20px;
+    border-radius: 10px;
+  }

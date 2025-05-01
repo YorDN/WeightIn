@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weight In</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>Weight In 💪</h1>
+
+    <div class="grid">
+      <!-- Last Weight -->
+      <div class="card">
+        <div class="dot-container">
+            <span class="dot" id="red-dot"></span>
+            <span class="dot" id="yellow-dot"></span>
+            <span class="dot" id="green-dot"></span>
+        </div>
+        <h2>Last Weight</h2>
+        <div class="weight-display">
+          <span class="big-number" id="lastWeight">--</span>
+          <p id="lastDate">--/--/----</p>
+        </div>
+        <div id="history" class="history">
+          <!-- History rows will be inserted here -->
+        </div>
+        <button onclick="viewAll()">View All</button>
+      </div>
+
+      <!-- Check-in -->
+      <div class="sect-2-container">
+            <div class="card" id="checkin">
+                <div class="dot-container">
+                    <span class="dot" id="red-dot"></span>
+                    <span class="dot" id="yellow-dot"></span>
+                    <span class="dot" id="green-dot"></span>
+                </div>
+                <h2>Check in:</h2>
+                <div class="input-group">
+                <input type="number" id="newWeight" placeholder="Your Weight" />
+                <button onclick="saveWeight()">Save</button>
+                </div>
+                <small>*Please add it in kilograms (kgs)</small>
+            </div>
+    
+          <!-- Goal -->
+          <div class="card">
+            <div class="dot-container">
+                <span class="dot" id="red-dot"></span>
+                <span class="dot" id="yellow-dot"></span>
+                <span class="dot" id="green-dot"></span>
+            </div>
+            <h2>Goals</h2>
+            <input type="number" id="goalWeight" placeholder="Set Goal" onchange="setGoal()" />
+            <div class="goal-display">
+                <p id="goalDisplay"></p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
