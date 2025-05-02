@@ -6,6 +6,7 @@
     <title>Weight In 💪</title>
     <link rel="stylesheet" href="Styles/style.css" />
     <link rel="stylesheet" href="Styles/sidebar.css" />
+    <link rel="stylesheet" href="Styles/manage.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -50,11 +51,17 @@
                         <span class="dot" id="yellow-dot"></span>
                         <span class="dot" id="green-dot"></span>
                     </div>
-                    
+                    <h2>Manage Data</h2>
+                    <button class="delete-data" onclick="deleteData()"><i class='bx bx-error'></i> Delete Data</button>
+                    <div class="warning-container">
+                      <p><strong>Warning!</strong> Upon pressing the button above all of your data will be terminated! You will no longer will be able to access the deleted data! This process is <strong>irreversible</strong>!</p>
+                    </div>
                  </div>
+                 
             </div>
         </div>
         
     </div>
+    <script src="JavaScript/delete.js"></script>
 </body>
 </html>

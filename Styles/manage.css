@@ -1,0 +1,25 @@
+.delete-data{
+    background-color: #ff605c;
+    color: white;
+    transition: 0.15s;
+}
+.delete-data:hover{
+    background-color: #ff5f5cd8;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+.card{
+    width: 50%;
+    height: auto;
+}
+strong{
+    color: #c33c3a;
+}
+p{
+    color: rgba(255, 255, 255, 0.786);
+}
+.warning-container{
+
+    margin-top: 80px;
+}

@@ -11,8 +11,8 @@ function loadHistory(){
     const end = start + pageSize;
     const weightRecords = weights.slice(start, end);
 
-   const newHtml = weightRecords.map(e => 
-        `<div class="history-entry"><span>${e.weight} kg</span><span>${e.date}</span></div>`
+   const newHtml = weightRecords.map((e, i) => 
+        `<div class="history-entry"><span>${e.weight} kg</span><span>${e.date}</span><button onclick="DeleteItem(${start + i})"><i class='bx bx-trash' ></i></button></div>`
     ).join('');
 
     history.insertAdjacentHTML("beforeend", newHtml);
@@ -24,6 +24,12 @@ function loadHistory(){
     }
 }
 
-
+function DeleteItem(index){
+    if(confirm("Are you sure you want to delete this record?")){
+        weights.splice(index, 1);
+        localStorage.setItem("weights", JSON.stringify(weights.reverse()));
+        location.reload();
+    }
+}
 
 loadHistory();
