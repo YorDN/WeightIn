@@ -5,66 +5,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Weight In 💪</title>
   <link rel="stylesheet" href="Styles/style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0"></script>
+  <link rel="stylesheet" href="Styles/sidebar.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
   <div class="app">
-    <h1>Weight In 💪</h1>
-
-    <div class="grid">
-      <!-- Last Weight -->
-      <div class="card">
-        <div class="dot-container">
-            <span class="dot" id="red-dot"></span>
-            <span class="dot" id="yellow-dot"></span>
-            <span class="dot" id="green-dot"></span>
-        </div>
-        <h2>Last Weight</h2>
-        <div class="weight-display">
-          <span class="big-number" id="lastWeight">--</span>
-          <p id="lastDate">--/--/----</p>
-        </div>
-        <div id="history" class="history">
-          <!-- History rows will be inserted here -->
-        </div>
-        <button onclick="viewAll()">View All</button>
-        <button onclick="NavigateTo('chart.html')">View Chart</button>
+    <h1>Weight In 💪💖</h1>
+    <div class="container">
+      <div class="nav-bar">
+        
+        <div class="control-button-container"></div>
+        <div class="logo-container"></div>
+        <a href="index.html">
+          <div class="link">
+            <i class='bx bxs-home'></i> Home
+          </div>
+        </a>
+        <a href="chart.html">
+          <div class="link">
+            <i class='bx bx-line-chart-down' ></i> Weight Chart
+          </div>
+        </a>
+        <a href="history.html">
+          <div class="link">
+            <i class='bx bx-history' ></i> History
+          </div>
+        </a>
+        <a href="manage.html">
+          <div class="link">
+            <i class='bx bxs-edit'></i> Manage Data
+          </div>
+        </a>
+        <a href="contact.html">
+          <div class="link">
+            <i class='bx bx-envelope' ></i> Contact 
+          </div>
+        </a>
       </div>
-
-      <!-- Check-in -->
-      <div class="sect-2-container">
-            <div class="card" id="checkin">
-                <div class="dot-container">
-                    <span class="dot" id="red-dot"></span>
-                    <span class="dot" id="yellow-dot"></span>
-                    <span class="dot" id="green-dot"></span>
-                </div>
-                <h2>Check in:</h2>
-                <div class="input-group">
-                <input type="number" id="newWeight" placeholder="Your Weight" />
-                <button onclick="saveWeight()">Save</button>
-                </div>
-                <small>*Please add it in kilograms (kgs)</small>
-            </div>
-    
-          <!-- Goal -->
+      <div class="page-content">
+        <div class="grid">
+          <!-- Last Weight -->
           <div class="card">
             <div class="dot-container">
                 <span class="dot" id="red-dot"></span>
                 <span class="dot" id="yellow-dot"></span>
                 <span class="dot" id="green-dot"></span>
             </div>
-            <h2>Goals</h2>
-            <input type="number" id="goalWeight" placeholder="Set Goal" onchange="setGoal()" />
-            <div class="goal-display">
-                <p id="goalDisplay"></p>
+            <h2>Last Weight</h2>
+            <div class="weight-display">
+              <span class="big-number" id="lastWeight">--</span>
+              <p id="lastDate">--/--/----</p>
             </div>
+            <div id="history" class="history">
+              <!-- History rows will be inserted here -->
+            </div>
+            <button onclick="NavigateTo('history.html')">View All</button>
           </div>
+    
+          <!-- Check-in -->
+          <div class="sect-2-container">
+                <div class="card" id="checkin">
+                    <div class="dot-container">
+                        <span class="dot" id="red-dot"></span>
+                        <span class="dot" id="yellow-dot"></span>
+                        <span class="dot" id="green-dot"></span>
+                    </div>
+                    <h2>Check in:</h2>
+                    <div class="input-group">
+                    <input type="number" id="newWeight" placeholder="Your Weight" />
+                    <button onclick="saveWeight()">Save</button>
+                    </div>
+                    <small>*Please add it in kilograms (kgs)</small>
+                </div>
+        
+              <!-- Goal -->
+              <div class="card">
+                <div class="dot-container">
+                    <span class="dot" id="red-dot"></span>
+                    <span class="dot" id="yellow-dot"></span>
+                    <span class="dot" id="green-dot"></span>
+                </div>
+                <h2>Goals</h2>
+                <input type="number" id="goalWeight" placeholder="Set Goal" onchange="setGoal()" />
+                <div class="goal-display">
+                    <p id="goalDisplay"></p>
+                </div>
+              </div>
+            </div>
         </div>
+      </div>
+      </div>
     </div>
-  </div>
   <script src="JavaScript/navigate.js"></script>
   <script src="JavaScript/app.js"></script>
 </body>

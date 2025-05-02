@@ -42,8 +42,4 @@ function updateUI() {
 
 }
 
-function viewAll() {
-  alert(weights.map(e => `${e.date}: ${e.weight} kg`).join("\n"));
-}
-
 updateUI();

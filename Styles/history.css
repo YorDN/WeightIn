@@ -1,0 +1,25 @@
+.history-container{
+    overflow: scroll;
+    height: 400px;
+    padding: 10px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .show-more{
+    margin-top: 20px;
+  }
+  .history-entry{
+    background-color: transparent;
+  }
