@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weight In 💪</title>
+    <link rel="stylesheet" href="Styles/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0"></script>
+    <script src="JavaScript/navigate.js"></script>
+</head>
+<body>
+    <div class="app">
+        <div class="card">
+            <!-- Last Weight -->
+        <div class="dot-container">
+            <span class="dot" id="red-dot"></span>
+            <span class="dot" id="yellow-dot"></span>
+            <span class="dot" id="green-dot"></span>
+        </div>
+        <h2>Weight Chart</h2>
+        <canvas id="weightChart" width="300" height="200"></canvas>
+        <div class="button-container" style="display: flex; justify-content: space-evenly; margin-top: 30px;">
+            <button onclick="viewAll()">History</button>
+            <button onclick="NavigateTo('index.html')">Home</button>
+        </div>
+    </div>
+    
+
+    <script src="JavaScript/chart.js"></script>
+</body>
+</html>

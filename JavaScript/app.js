@@ -1,5 +1,7 @@
 let weights = JSON.parse(localStorage.getItem("weights") || "[]");
 let goal = localStorage.getItem("goal");
+let weightChart;
+
 
 function saveWeight() {
   const input = document.getElementById("newWeight");
@@ -37,6 +39,7 @@ function updateUI() {
   const goalDisplay = document.getElementById("goalDisplay");
   goalInput.value = goal || "";
   goalDisplay.textContent = goal ? `Goal: ${goal} kg 😍` : "";
+
 }
 
 function viewAll() {
