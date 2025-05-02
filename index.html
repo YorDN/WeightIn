@@ -4,7 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Weight In 💪</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="Styles/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0"></script>
 </head>
 <body>
   <div class="app">
@@ -27,6 +30,7 @@
           <!-- History rows will be inserted here -->
         </div>
         <button onclick="viewAll()">View All</button>
+        <button onclick="NavigateTo('chart.html')">View Chart</button>
       </div>
 
       <!-- Check-in -->
@@ -61,7 +65,7 @@
         </div>
     </div>
   </div>
-
-  <script src="app.js"></script>
+  <script src="JavaScript/navigate.js"></script>
+  <script src="JavaScript/app.js"></script>
 </body>
 </html>
