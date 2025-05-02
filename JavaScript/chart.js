@@ -7,7 +7,7 @@ function updateUI() {
 
 function drawChart(){
 
-const dataNeeded = weights.slice(-7);
+const dataNeeded = weights.slice(-20);
 const labels = dataNeeded.map(e => e.date);
 const data = dataNeeded.map(e => e.weight);
 
