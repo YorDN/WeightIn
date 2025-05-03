@@ -5,3 +5,33 @@
     border-radius: 50%;
     margin: 0 auto;
 }
+.social-links{
+    display: flex;
+    
+}
+.social{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+}
+.social a{
+    color: white;
+    text-decoration: none;
+    transition: 0.15s;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.social a:hover{
+    margin-bottom: 2px;
+}
+.social-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

@@ -19,7 +19,7 @@
     text-align: start;
     font-size: 20px;
 }
-a{
+.nav-link{
     color: white;
     text-decoration: none;
     transition: 0.15s;
@@ -27,7 +27,7 @@ a{
     margin-top: 5px;
     margin-bottom: 5px;
 }
-a:hover{
+.nav-link:hover{
     background: rgba(255, 255, 255, 0.1);
     padding-left: 2px;
     backdrop-filter: blur(10px);
